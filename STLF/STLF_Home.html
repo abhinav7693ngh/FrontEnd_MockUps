@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="STLF_Home.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+        <link href="STLF_Home.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="page-content">
+            <div class="main-content-navbar">
+                <h1>SLDC Load Forecasting</h1>
+                <div class="my-responsive-menu">
+                    <a>Total</a>
+                    <a>EZ</a>
+                    <a>CZ</a>
+                    <a>WZ</a>
+                    <a>Railways</a>
+                </div>
+            </div>
+            <div class="main-content-body">
+                <div class="main-content-sidebar">
+                    <a>Total</a>
+                    <a>EZ</a>
+                    <a>CZ</a>
+                    <a>WZ</a>
+                    <a>Railways</a>
+                </div>
+                <div class="main-content">
+                    <div class="main-content-chart-hourly">
+                        <div class="main-content-chart">
+                            <h1>Discom 1</h1>
+                            <div class="card main-content-chart-card nomargin">
+                                <div class="chart-text">
+                                    <div class='float-left'>
+                                        <h2 class="card-title">Today’s Chart ({{today}})</h2>
+                                        <form class="main-content__chart-selector">
+                                            <label id="main-content__chart-forecast" style='color: rgba(221, 102, 0, 1)!important;'>
+                                                <input type="radio" value="Forecast" name='chart'>
+                                                Forecasted
+                                            </label>
+                                            <label id="main-content__chart-actual" style='color: rgba(23, 147, 145, 1)!important;'>
+                                                <input type="radio" value="Actual" name='chart'>
+                                                Actual
+                                            </label>
+                                    
+                                            <label id="main-content__chart-both">
+                                                <input type="radio" value="Both" name='chart' checked>
+                                                Both
+                                            </label>
+                                        </form>
+                                    </div>
+                                    <div class='float-right'>
+                                        <b>Current Data</b>
+                                        <br>
+                                        <table class='main-content-card__chart-table'>
+                                            <tr>
+                                                <td>Forecasted </td>
+                                                <td> 7777 </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Actual </td>
+                                                <td> 8888 </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="main-chart-area">
+                                    <h1>My main chart area</h1>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main-content-hourly">
+                            <div class="card main-content-hourly-card nomargin">
+                                <div class="hourly-label">
+                                    <h2>Hour Ahead Forecast</h2>
+                                </div>
+                                <div class="hourly-table">
+                                    <table>
+                                        <tr>
+                                            <th></th>
+                                            <th>Discom1</th>
+                                            <th>Discom2</th>
+                                            <th>Discom3</th>
+                                            <th>Customer1</th>
+                                        </tr>
+                                        <tr>
+                                            <td>09:15</td>
+                                            <td>XXXX</td>
+                                            <td>YYYY</td>
+                                            <td>ZZZZ</td>
+                                            <td>VVVV</td>
+                                        </tr>
+                                        <tr>
+                                            <td>09:30</td>
+                                            <td>XXXX</td>
+                                            <td>YYYY</td>
+                                            <td>ZZZZ</td>
+                                            <td>VVVV</td>
+                                        </tr>
+                                        <tr>
+                                            <td>09:45</td>
+                                            <td>XXXX</td>
+                                            <td>YYYY</td>
+                                            <td>ZZZZ</td>
+                                            <td>VVVV</td>
+                                        </tr>
+                                        <tr>
+                                            <td>10:00</td>
+                                            <td>XXXX</td>
+                                            <td>YYYY</td>
+                                            <td>ZZZZ</td>
+                                            <td>VVVV</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main-content-24">
+                        <div class="card main-content-24-card nomargin">
+                            <div class="main24-text nomargin">
+                                <h2>Today's Electricity Load</h2>
+                                02/03/2020
+                            </div>
+                            <center>
+                            <div class="main24-table nomargin">
+                                <table>
+                                    <tr>
+                                        <th>Time</th>
+                                        <th>Actual</th>
+                                        <th>Forecasted</th>
+                                    </tr>
+                                    <div class="main24-border">
+                                        <tr>
+                                            <td>09:15</td>
+                                            <td>XXXX</td>
+                                            <td>XXXX</td>
+                                        </tr>
+                                        <tr>
+                                            <td>09:15</td>
+                                            <td>XXXX</td>
+                                            <td>XXXX</td>
+                                        </tr>
+                                        <tr>
+                                            <td>09:15</td>
+                                            <td>XXXX</td>
+                                            <td>XXXX</td>
+                                        </tr>
+                                        <tr>
+                                            <td>09:15</td>
+                                            <td>XXXX</td>
+                                            <td>XXXX</td>
+                                        </tr>
+                                        <tr>
+                                            <td>09:15</td>
+                                            <td>XXXX</td>
+                                            <td>XXXX</td>
+                                        </tr>
+                                        <tr>
+                                            <td>09:15</td>
+                                            <td>XXXX</td>
+                                            <td>XXXX</td>
+                                        </tr>
+                                        <tr>
+                                            <td>09:15</td>
+                                            <td>XXXX</td>
+                                            <td>XXXX</td>
+                                        </tr>
+                                        <tr>
+                                            <td>09:15</td>
+                                            <td>XXXX</td>
+                                            <td>XXXX</td>
+                                        </tr>
+                                        <tr>
+                                            <td>09:15</td>
+                                            <td>XXXX</td>
+                                            <td>XXXX</td>
+                                        </tr>
+                                        <tr>
+                                            <td>09:15</td>
+                                            <td>XXXX</td>
+                                            <td>XXXX</td>
+                                        </tr>
+                                        <tr>
+                                            <td>09:15</td>
+                                            <td>XXXX</td>
+                                            <td>XXXX</td>
+                                        </tr>
+                                        <tr>
+                                            <td>09:15</td>
+                                            <td>XXXX</td>
+                                            <td>XXXX</td>
+                                        </tr>
+                                        <tr>
+                                            <td>09:15</td>
+                                            <td>XXXX</td>
+                                            <td>XXXX</td>
+                                        </tr>
+                                    </div>
+                                </table>
+                            </div>
+                            </center>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+
+<script>
+
+
+</script>
+
+
+
+
+</html>

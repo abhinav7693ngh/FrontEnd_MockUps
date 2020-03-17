@@ -1,0 +1,289 @@
+            html{
+                font-family: 'Roboto', sans-serif;
+            }
+            body{
+                box-sizing: border-box;
+                margin:0;
+                padding: 0;
+            }
+            .nomargin{
+                margin : 0;
+                padding:  0;
+            }
+            .page-content{
+                max-height : 100vh;
+                max-width : 100vw;
+                display: grid;
+                grid-template-rows: 7.2vh 92.8vh;
+                grid-template-columns: 1fr;
+            }
+            .main-content-navbar{
+                box-sizing: border-box;
+                font-weight: 500;
+                background-color: #374B76;
+                color : whitesmoke;
+                display: flex;
+                justify-content: space-between;
+            }
+            .main-content-navbar h1{
+                display: inline;
+                align-self: center;
+            }
+            .my-responsive-menu{
+                font-size: 16pt;
+                width : 60vw;
+                display: flex;
+                justify-content: space-evenly;
+            }
+            .my-responsive-menu a{
+                align-self: center;
+            }
+            .main-content-navbar h1{
+                vertical-align: middle;
+            }
+            .main-content-body{
+                display: grid;
+                min-height: auto;
+                grid-template-columns: 8.33vw 91.67vw;
+                grid-template-rows: 92.8vh;
+            }
+            .main-content-sidebar{
+                background: #6D7F9B;
+                border-color: #F5F5F5;
+                display: flex;
+                flex-direction: column;
+                color: white;
+                font-size: 15pt;
+                padding-top: 4vh;
+            }
+            .main-content-sidebar a{
+                padding: 20px;
+                align-self: center;
+            }
+            .main-content{
+                background-color: rgba(155, 195, 255, 0.1);
+                display: grid;
+                grid-template-columns: 52.5vw 39.17vw;
+                min-width: auto;
+                min-height: auto;
+                max-width: 91.67vw;
+                max-height: 92.8vh;
+            }
+            .main-content-chart{
+                padding-left: 2.8vw;
+            }
+            .main-content-chart-card{
+                border-color: rgb(112,112,112)!important;
+                box-shadow: 0 5px 4px  0 rgba(0,0,0, 0.2);
+                background-color: white;
+                border-radius : 10pt;
+                width : 48.4vw;
+                height : 48.7vh;
+                margin-bottom: 2.2vh;
+                box-sizing: border-box;
+                padding-left : 40px ;
+                padding-right: 40px;
+                padding-top: 10px;
+                display: grid;
+                grid-template-rows: 12vh 36.7vh;
+            }
+            .chart-text{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+            }
+            .main-chart-area{
+                margin-bottom: 15px;
+            }
+            .float-right{
+                margin-right: 2vw;
+                align-self: center;
+            }
+            .main-content-hourly{
+                margin-left: 2.8vw;
+            }
+            .main-content-hourly-card{
+                border-color: rgb(112,112,112)!important;
+                box-shadow: 0 5px 4px  0 rgba(0,0,0, 0.2);
+                background-color: white;
+                border-radius : 10pt;
+                height: 28.2vh;
+                width : 48.4vw;
+                box-sizing: border-box;
+                padding-top: 0.1vh;
+                padding-left: 1.5vw ;
+                padding-right: 1.5vw;
+                padding-bottom: 0.1vh;
+                display: grid;
+                grid-template-rows: 6vh 20vh;
+            }
+            .hourly-table table{
+                width : 100%;
+            }
+            .hourly-table tr:nth-child(even) {background-color:#BFD7ED;}
+            .hourly-table td,th{
+                padding: 8px;
+            }
+            .hourly-table td{
+                height : 20px;
+                text-align: center;
+                border-bottom: 1px solid #ddd;
+            }
+            .main-content-24{
+                margin-left: 1.3vw;
+                margin-top: 8.3vh;
+            }
+            .main-content-24-card{
+                border-color: rgb(112,112,112)!important;
+                box-shadow: 0 5px 4px  0 rgba(0,0,0, 0.2);
+                background-color: white;
+                border-radius: 10pt;
+                height: 79.1vh;
+                width : 35.1vw;
+                box-sizing: border-box;
+                margin-top: 0.7vh;
+                display: grid;
+                grid-template-rows: 11vh 60vh ;
+                padding: 20px;
+            }
+            .main24-text{
+                padding-left: 20px;
+            }
+            .main24-table{
+                overflow: auto;
+                height : 60vh;
+            }
+            .main24-table table{
+                width:80%;
+                table-layout: fixed;
+            }
+            .main24-table tr:nth-child(even) {background-color:#eee;}
+            .main24-table td{
+                text-align: center;
+            }
+            .main24-table td,th{
+                padding: 12px;
+            }
+            @media only screen and (max-width: 1440px) {
+                .main-content-sidebar{
+                    display: none;
+                }
+                .main-content-body{
+                    background-color: rgba(155, 195, 255, 0.1);
+                }
+                .main-content{
+                display: grid;
+                grid-template-columns: 2fr 1fr;
+                min-width: auto;
+                min-height: auto;
+                max-width: 91.67vw;
+                max-height: 92.8vh;
+            }
+            .main-content-chart-card{
+                border-color: rgb(112,112,112)!important;
+                box-shadow: 0 5px 4px  0 rgba(0,0,0, 0.2);
+                background-color: white;
+                border-radius : 10pt;
+                width : 54.4vw;
+                height : 48.7vh;
+                margin-bottom: 2.2vh;
+                box-sizing: border-box;
+                padding-left : 40px ;
+                padding-right: 40px;
+                padding-top: 10px;
+                display: grid;
+                grid-template-rows: 12vh 36.7vh;
+            }
+            .main-content-hourly-card{
+                border-color: rgb(112,112,112)!important;
+                box-shadow: 0 5px 4px  0 rgba(0,0,0, 0.2);
+                background-color: white;
+                border-radius : 10pt;
+                height: 28.2vh;
+                width : 54.4vw;
+                box-sizing: border-box;
+                padding-top: 0.1vh;
+                padding-left: 1.5vw ;
+                padding-right: 1.5vw;
+                padding-bottom: 0.1vh;
+                display: grid;
+                grid-template-rows: 6vh 20vh;
+            }
+            .main-content-24-card{
+                border-color: rgb(112,112,112)!important;
+                box-shadow: 0 5px 4px  0 rgba(0,0,0, 0.2);
+                background-color: white;
+                border-radius: 10pt;
+                height: 79.1vh;
+                width : 39.1vw;
+                box-sizing: border-box;
+                margin-top: 1.2vh;
+                display: grid;
+                grid-template-rows: 11vh 60vh ;
+                padding: 20px;
+            }
+            }
+            @media only screen and (max-width: 1350px) {
+                .main-content-sidebar{
+                    display: none;
+                }
+                .main-content-body{
+                    overflow-x: hidden;
+                    min-height: 200vh;
+                    max-width: 100vw;
+                    background-color: rgba(155, 195, 255, 0.1);
+                }
+                .main-content{
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: 2fr 1fr 3fr;
+                min-width: auto;
+                min-height: auto;
+                max-width: 91.67vw;
+                max-height: 92.8vh;
+            }
+            .main-content-chart-card{
+                border-color: rgb(112,112,112)!important;
+                box-shadow: 0 5px 4px  0 rgba(0,0,0, 0.2);
+                background-color: white;
+                border-radius : 10pt;
+                width : 93vw;
+                height : 70vh;
+                box-sizing: border-box;
+                padding-left : 40px ;
+                padding-right: 40px;
+                padding-top: 10px;
+                display: grid;
+                grid-template-rows: 12vh 36.7vh;
+            }
+            .main-content-hourly-card{
+                border-color: rgb(112,112,112)!important;
+                box-shadow: 0 5px 4px  0 rgba(0,0,0, 0.2);
+                background-color: white;
+                border-radius : 10pt;
+                height: 32vh;
+                width : 93vw;
+                box-sizing: border-box;
+                padding-top: 0.1vh;
+                padding-left: 1.5vw ;
+                padding-right: 1.5vw;
+                padding-bottom: 0.1vh;
+                display: grid;
+                grid-template-rows: 6vh 20vh;
+            }
+            .main-content-24-card{
+                margin-top: -5.5vh;
+                margin-left: 1.7vw;
+                margin-bottom: 4vh;
+                border-color: rgb(112,112,112)!important;
+                box-shadow: 0 5px 4px  0 rgba(0,0,0, 0.2);
+                background-color: white;
+                border-radius: 10pt;
+                height: 79vh;
+                width : 93vw;
+                box-sizing: border-box;
+                display: grid;
+                grid-template-rows: 11vh 60vh ;
+                padding: 20px;
+            }
+            }
